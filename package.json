@@ -1,0 +1,34 @@
+{
+  "name": "satellite-config-subscription-update-action",
+  "version": "0.0.1",
+  "description": "A Github Actions that allow users to update an IBM Cloud Satellite Config subscription",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBM/satellite-config-subscription-update-action.git"
+  },
+  "keywords": [
+    "ibm",
+    "razee",
+    "satellite"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IBM/satellite-config-subscription-update-action/issues"
+  },
+  "homepage": "https://github.com/IBM/satellite-config-subscription-update-action#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0"
+  },
+  "dependencies": {
+    "@actions/artifact": "^0.3.5",
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "jwt-decode": "^2.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
