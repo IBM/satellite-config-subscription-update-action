@@ -1,0 +1,29 @@
+name: 'Satellite subscription version update(alpha)'
+description: 'Set a new version for an IBM Cloud Satellite subscription(alpha)'
+inputs:
+  apikey:
+    description: 'IBM Cloud API key'
+    required: true
+  satelliteHost:
+    description: 'IBM Cloud Satellite API endpoint'
+    required: false
+    default: 'https://config.satellite.cloud.ibm.com/graphql'
+  tokenHost:
+    description: 'IBM Cloud IAM endpoint'
+    required: false
+    default: 'https://iam.cloud.ibm.com/identity/token'
+  subscriptionUuid:
+    description: 'Satellite Config subscription id'
+    required: true
+  versionUuid:
+    description: 'Satellite Config version id'
+    required: true
+outputs:
+  uuid:
+    description: 'The id of the version that the subscription now points to'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: arrow-up-circle
+  color: blue
